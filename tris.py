@@ -8,6 +8,7 @@ from PyQt5.Qt import Qt
 from trisBulles import BubbleSortView
 from triInsertion import InsertionSortView
 from triSelection import SelectionSortView
+from triFusion import MergeSortView
 
 class SortsView(QMainWindow):
     
@@ -26,7 +27,7 @@ class SortsView(QMainWindow):
         self.bubbleSortWindow.show()
     
     def on_mergeSortButton_clicked(self):
-        self.mergeSortWindow = BubbleSortView()
+        self.mergeSortWindow = MergeSortView()
         self.mergeSortWindow.show()
     
     def on_insertionSortButton_clicked(self):
